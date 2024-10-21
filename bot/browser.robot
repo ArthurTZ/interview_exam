@@ -1,7 +1,11 @@
-*** Settings ***
+
+# Estrutura do arquivo Robot : 
+# Settings : Configuração
+*** Settings ***  
 Documentation    ${First Test Case}
 Library    OperatingSystem
 Library    SeleniumLibrary
+Library    Builtin
 
 *** Keywords ***
 OpenSite
@@ -9,5 +13,5 @@ OpenSite
 
 *** Test Cases ***
 TEST
-    
     OpenSite
+    Close Browser
